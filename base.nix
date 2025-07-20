@@ -60,9 +60,16 @@ in
   services.xserver.enable = true;
 
   # Enable the Cinnamon Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
+  ## services.xserver.displayManager.lightdm.enable = true;
+  ## services.xserver.desktopManager.cinnamon.enable = true;
+  ## xdg.portal.enable = true;
+
+  # Enable Gnome Desktop 
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
+  # Used by Flatpacks
   xdg.portal.enable = true;
+
 
   # Enable Printing
   services.printing.enable = true;
