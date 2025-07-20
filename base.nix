@@ -64,10 +64,6 @@ in
   ## services.xserver.desktopManager.cinnamon.enable = true;
   ## xdg.portal.enable = true;
 
-  # Enable Gnome Desktop 
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-
   # Enable Printing
   services.printing.enable = true;
   services.avahi = {
