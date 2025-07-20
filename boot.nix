@@ -15,8 +15,8 @@ boot = {
     ];
 
     # plymouth, showing after LUKS unlock
-    plymouth.enable = true;
-    plymouth.font = "${pkgs.hack-font}/share/fonts/truetype/Hack-Regular.ttf";
-    plymouth.logo = "${pkgs.nixos-icons}/share/icons/hicolor/128x128/apps/nix-snowflake.png";
+    ## plymouth.enable = true;
+    ## plymouth.font = "${pkgs.hack-font}/share/fonts/truetype/Hack-Regular.ttf";
+    ## plymouth.logo = "${pkgs.nixos-icons}/share/icons/hicolor/128x128/apps/nix-snowflake.png";
 };
 }
