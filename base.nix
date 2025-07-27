@@ -65,13 +65,20 @@ in
   ## xdg.portal.enable = true;
 
   # Enable Gnome desktop
-  services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  ## services.xserver.enable = true;
+  ## services.xserver.displayManager.gdm.enable = true;
+  ## services.xserver.desktopManager.gnome.enable = true;
 
   # Gnome setting from 25.11 prepare or if unstable
   ## services.displayManager.gdm.enable = true;
   ## services.desktopManager.gnome.enable = true;
+
+  ## plama with wayland
+  services.xserver.enable = false; # no X11 to awoid conflicts
+  ## services.displayManager.sddm.enable = true;
+  ## services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  services.desktopManager.plasma6.wayland.enable = true;
 
   # Enable Printing
   services.printing.enable = true;
