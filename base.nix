@@ -74,11 +74,16 @@ in
   ## services.desktopManager.gnome.enable = true;
 
   ## plama with wayland
-  services.xserver.enable = false; # no X11 to awoid conflicts
-  ## services.displayManager.sddm.enable = true;
-  ## services.desktopManager.plasma6.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
-  services.desktopManager.plasma6.wayland.enable = true;
+  # Enable SDDM and Plasma6
+  services.xserver.enable = false;
+  services.displayManager.sddm.enable = true ;
+  services.desktopManager.plasma6.enable = true ;
+
+  # KDE Plasma in Wayland
+  services.displayManager.defaultSession = "plasma" ;
+
+  # SDDM in Wayland
+  services.displayManager.sddm.wayland.enable = true ;
 
   # Enable Printing
   services.printing.enable = true;
