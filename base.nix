@@ -69,6 +69,10 @@ in
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  # Gnome setting from 25.11 prepare or if unstable
+  ## services.displayManager.gdm.enable = true;
+  ## services.desktopManager.gnome.enable = true;
+
   # Enable Printing
   services.printing.enable = true;
   services.avahi = {
